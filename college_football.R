@@ -25,13 +25,13 @@ df <- merge(df, wins_by_school, by = "School", all.x = TRUE)
 
 
 # Rough histograms for the visually curious
-hist(wins_by_school$School_Wins)
-hist(wins_by_coach$Head_Coach_Wins)
+hist(wins_by_school$School_Wins, main = "School Wins", xlab = "Championships", col = "dodgerblue")
+hist(wins_by_coach$Head_Coach_Wins, main = "Coach wins", xlab = "Championships", col = "maroon")
 
 # Signifcance of School 
 summary(aov(df$School_Wins ~ df$`Head Coach`))
-TukeyHSD(aov(df$School_Wins ~ df$`Head Coach`))
+#TukeyHSD(aov(df$School_Wins ~ df$`Head Coach`))
 
 # Significance of Coach
 summary(aov(df$Head_Coach_Wins ~ df$`Head Coach`))
-TukeyHSD(aov(df$Head_Coach_Wins ~ df$`Head Coach`))
+#TukeyHSD(aov(df$Head_Coach_Wins ~ df$`Head Coach`))
