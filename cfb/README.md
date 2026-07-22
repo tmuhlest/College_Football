@@ -16,7 +16,7 @@ Player wins are calculated based on how a player performs relative to the averag
 
 ```bash
 # 1. Clone and set up environment
-git clone https://github.com/yourname/cfb.git
+git clone https://github.com/tmuhlest/College_Football
 cd cfb
 conda env create -f environment.yml
 conda activate pve
