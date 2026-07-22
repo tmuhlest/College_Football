@@ -1,0 +1,34 @@
+# secrets
+.env
+
+# large data files (versioned separately or regenerated)
+data/raw/
+data/processed/
+models/artifacts/
+# note: data/*.xlsx is intentionally tracked (worked example + template)
+
+# private analysis notebooks — not part of the package/commit
+notebooks/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# conda / venv
+.conda/
+env/
+venv/
+
+# editor
+.vscode/
+.idea/
+*.swp
